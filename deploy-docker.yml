@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: doc-ansi-app
-        image: "devopeng121/docker-ansible:1.0"
+        image: "devopeng121/docker-ansible:{{buildNumber}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:9000
